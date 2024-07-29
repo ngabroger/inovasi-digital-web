@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.hamburger-menu{
+    @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+
+.hamburger-activate > span:nth-child(1){
+    @apply origin-top-left rotate-45;
+}
+.hamburger-activate > span:nth-child(2){
+    @apply scale-0
+}
+.hamburger-activate > span:nth-child(3){
+    @apply origin-bottom-left -rotate-45;
+}
