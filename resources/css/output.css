@@ -1253,6 +1253,10 @@ body{
   margin-top: 1rem;
 }
 
+.-mb-10{
+  margin-bottom: -2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1390,6 +1394,30 @@ body{
   width: 100%;
 }
 
+.w-20{
+  width: 5rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.w-80{
+  width: 20rem;
+}
+
+.w-72{
+  width: 18rem;
+}
+
+.w-\[450px\]{
+  width: 450px;
+}
+
+.w-\[540px\]{
+  width: 540px;
+}
+
 .max-w-full{
   max-width: 100%;
 }
@@ -1446,6 +1474,20 @@ body{
 
 .transform-none{
   transform: none;
+}
+
+@keyframes float{
+  0%, 100%{
+    transform: translateY(-10%);
+  }
+
+  50%{
+    transform: translateY(-5%);
+  }
+}
+
+.animate-float{
+  animation: float 3s ease-in-out infinite;
 }
 
 @keyframes loop-scroll{
@@ -2352,6 +2394,14 @@ body{
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-\[540px\]{
+    width: 540px;
+  }
+
+  .md\:w-\[500px\]{
+    width: 500px;
   }
 
   .md\:grid-cols-2{
