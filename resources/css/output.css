@@ -1492,7 +1492,7 @@ body{
 
 @keyframes loop-scroll{
   from{
-    transform: translateX(100%);
+    transform: translateX(0);
   }
 
   to{
@@ -1501,7 +1501,7 @@ body{
 }
 
 .animate-loop-scroll{
-  animation: loop-scroll 25s linear infinite;
+  animation: loop-scroll 20s linear infinite;
 }
 
 @keyframes loop-scroll-reverse{
@@ -1604,6 +1604,12 @@ body{
 
 .gap-8{
   gap: 2rem;
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
