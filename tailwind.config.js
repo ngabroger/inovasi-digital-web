@@ -7,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "loop-scroll": "loop-scroll 25s linear infinite",
+        "loop-scroll": "loop-scroll 20s linear infinite",
          'loop-scroll-reverse': 'loop-scroll-reverse 20s linear infinite'
       },
       keyframes: {
         "loop-scroll": {
-          from: { transform: "translateX(100%)" },
+          from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
         'loop-scroll-reverse': {
