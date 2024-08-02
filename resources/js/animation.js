@@ -1,17 +1,29 @@
 
 
+gsap.from("#item-ai", {
+    scrollTrigger:{
+        trigger: "#item-ai",
+        start: "top center",
+        bottom: "bottom center",
+        scrub: false,
+        markers: false,
+    },
+    duration: .1,
+    stagger: 0.10, // Animasi berurutan
+    scale: 0, // Mulai dari skala 0 (tak terlihat)
+    transformOrigin: "center", // Transformasi dari tengah elemen
+    opacity: 0, // Mulai dari opasitas 0
+    ease: "bounce" // Efek bouncing
+})
 
-const paths = document.querySelectorAll('#stairs path');
-gsap.timeline()
-    .from(paths, {
-        duration: .1,
-        stagger: 0.0010, // Animasi berurutan
-        scale: 0, // Mulai dari skala 0 (tak terlihat)
-        transformOrigin: "center", // Transformasi dari tengah elemen
-        opacity: 0, // Mulai dari opasitas 0
-        ease: "bounce" // Efek bouncing
-    });
-
+gsap.from("#jaringan path", {
+    duration: .1,
+    stagger: 0.10, // Animasi berurutan
+    scale: 0, // Mulai dari skala 0 (tak terlihat)
+    transformOrigin: "center", // Transformasi dari tengah elemen
+    opacity: 0, // Mulai dari opasitas 0
+    ease: "bounce" // Efek bouncing
+});
 const robocop = document.getElementById('robocop');
    
 var tl= gsap.timeline();
@@ -57,16 +69,16 @@ var tl3 =gsap.timeline();
 tl3.from(section3,{
     scrollTrigger: {
         trigger: section3,
-        start: '-500 center', // Mulai animasi ketika elemen `section3` berada di 50% dari viewport
-        end: '-500 center', // Akhiri animasi ketika elemen `section3` mencapai bagian bawah halaman
-        scrub: 5, // Animasi mengikuti scroll
+        start: '-500 center',
+        end: '-500 center', 
+        scrub: 5, 
         markers: false
     },
     duration: .1,
     stagger: 0.0010, // Animasi berurutan
-    scale: 0, // Mulai dari skala 0 (tak terlihat)
-    transformOrigin: "center", // Transformasi dari tengah elemen
-    opacity: 0, // Mulai dari opasitas 0
+    scale: 0, 
+    transformOrigin: "center",
+    opacity: 0, 
     ease: "bounce" 
 });
     
@@ -75,16 +87,144 @@ var tl4 =gsap.timeline();
 tl4.from(section4,{
     scrollTrigger: {
         trigger: section3,
-        start: 'top center', // Mulai animasi ketika elemen `section3` berada di 50% dari viewport
-        end: 'bottom center', // Akhiri animasi ketika elemen `section3` mencapai bagian bawah halaman
-        scrub: 5, // Animasi mengikuti scroll
+        start: 'top center', 
+        end: 'bottom center', 
+        scrub: 5,
         markers: false
     },
     duration: .1,
     stagger: 0.0010, // Animasi berurutan
     scale: 0, // Mulai dari skala 0 (tak terlihat)
     transformOrigin: "center", // Transformasi dari tengah elemen
-    opacity: 0, // Mulai dari opasitas 0
+    opacity: 0,
     ease: "bounce" 
 });
     
+
+const card_daps = document.getElementById('card-daps');
+const card_ger = document.getElementById('card-ger');
+var tl5 = gsap.timeline();
+tl5.from(card_daps,{
+    scrollTrigger: {
+        trigger: card_daps,
+        start: '-250px center',
+        end: '-250px center', 
+        scrub: 1, 
+        markers: false
+    },
+    duration: 1,
+    opacity: 0,
+    y: 100,
+     
+});
+tl5.from(card_ger,{
+    scrollTrigger: {
+        trigger: card_ger,
+        start: '-250px center',
+        end: '-250px center', 
+        scrub: 1, 
+        markers: false
+    },
+    duration: 1,
+    opacity: 0,
+    y: 100,
+     
+})
+
+var tl6 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '#app-screen',
+        start: '100px center',
+        end: '200px center',
+        pin: true,
+        markers: false,
+    }
+});
+
+var tl7 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '#judul-break',
+        start: 'top center',
+        end: 'bottom center',
+     
+        scrub:1,
+        markers: false,
+    }
+});
+tl7.from('#judul-break', {
+    opacity: 0,
+    duration: 1,
+   
+}); 
+tl7.to('#judul-break', {
+    opacity: 1,
+    duration: 1,
+    y: 0,
+   
+}); 
+
+var tl8 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '#judul-break2',
+        start: 'top center',
+        end: 'bottom center',
+     
+        scrub:2,
+        markers: false,
+    }
+}).from('#judul-break2', {
+    opacity: 0,
+    duration: 1,
+    scale: 1,
+    y: 0,
+   
+}).to('#judul-break2', {
+    opacity: 1,
+    duration: 1,
+   
+    y: 0,
+});
+var tl9 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '#judul-break3',
+        start: 'bottom center',
+        end: '+=300',
+     
+        scrub:1,
+        markers: false,
+    }
+}).from('#judul-break3', {
+    opacity: 0,
+    duration: 1,
+    scale: 1,
+    y: 0,
+   
+}).to('#judul-break3', {
+    opacity: 1,
+    duration: 1,
+   
+    y: 0,
+   
+});
+var tl10 = gsap.timeline({
+    scrollTrigger: {
+        trigger: '#judul-break4',
+        start: 'bottom center',
+        end: '+=300',
+     
+        scrub:1,
+        markers: false,
+    }
+}).from('#judul-break4', {
+    opacity: 0,
+    duration: 1,
+    scale: 1,
+    y: 0,
+   
+}).to('#judul-break4', {
+    opacity: 1,
+    duration: 1,
+   
+    y: 0,
+   
+});
