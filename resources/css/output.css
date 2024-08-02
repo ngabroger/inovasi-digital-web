@@ -1189,10 +1189,6 @@ body{
   margin-bottom: -2.5rem;
 }
 
-.-mb-10{
-  margin-bottom: -2.5rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -2310,14 +2306,6 @@ body{
 
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:w-\[540px\]{
-    width: 540px;
-  }
-
-  .md\:w-\[500px\]{
-    width: 500px;
   }
 
   .md\:grid-cols-2{
