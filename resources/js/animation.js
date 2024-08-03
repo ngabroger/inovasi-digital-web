@@ -228,3 +228,25 @@ var tl10 = gsap.timeline({
     y: 0,
    
 });
+
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.from('.article-card', {
+  opacity: 0,
+
+  duration: 1,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: '.article-card',
+    start: 'top 80%',
+    end: 'bottom 20%',
+    toggleActions: 'play none none none'
+  }
+});
+
+gsap.from("#articleDetail > *", {
+    opacity: 0,
+    y: 50,
+    duration: 0.5,
+    stagger: 0.2,
+  });
