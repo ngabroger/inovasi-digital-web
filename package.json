@@ -3,7 +3,7 @@
     "tailwindcss": "^3.4.7"
   },
   "scripts": {
-    "dev": "tailwindcss -i ./resources/css/input.css -o ./resources/css/output.css --watch"
+    "dev": "tailwindcss -i ./public/resources/css/input.css -o ./public/resources/css/output.css --watch"
   },
   "dependencies": {
     "flowbite": "^2.4.1"
