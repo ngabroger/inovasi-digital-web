@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom': '0 4px 6px -1px rgba(20, 210, 195, 0.5)', // Ganti nilai rgba dengan warna yang diinginkan
+      },
       animation: {
         "loop-scroll": "loop-scroll 25s linear infinite",
          'loop-scroll-reverse': 'loop-scroll-reverse 20s linear infinite',
