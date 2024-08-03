@@ -1367,6 +1367,10 @@ body{
   height: 2.25rem;
 }
 
+.h-96{
+  height: 24rem;
+}
+
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
@@ -1525,7 +1529,7 @@ body{
 }
 
 .animate-loop-scroll-reverse{
-  animation: loop-scroll-reverse 20s linear infinite;
+  animation: loop-scroll-reverse 25s linear infinite;
 }
 
 .cursor-default{
@@ -1743,6 +1747,11 @@ body{
   background-color: rgb(29 187 175 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-blue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(63 131 248 / var(--tw-bg-opacity));
@@ -1784,6 +1793,10 @@ body{
 
 .bg-white\/50{
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .object-cover{
@@ -1867,6 +1880,10 @@ body{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pb-44{
+  padding-bottom: 11rem;
 }
 
 .pt-2{
@@ -2493,16 +2510,6 @@ body{
     background-color: transparent;
   }
 
-  .md\:hover\:text-blue-700:hover{
-    --tw-text-opacity: 1;
-    color: rgb(26 86 219 / var(--tw-text-opacity));
-  }
-
-  .md\:hover\:text-\[\#14D2C3\]:hover{
-    --tw-text-opacity: 1;
-    color: rgb(20 210 195 / var(--tw-text-opacity));
-  }
-
   .md\:hover\:text-green-400:hover{
     --tw-text-opacity: 1;
     color: rgb(49 196 141 / var(--tw-text-opacity));
@@ -2515,11 +2522,6 @@ body{
 
   .md\:dark\:hover\:bg-transparent:hover:is(.dark *){
     background-color: transparent;
-  }
-
-  .md\:dark\:hover\:text-blue-500:hover:is(.dark *){
-    --tw-text-opacity: 1;
-    color: rgb(63 131 248 / var(--tw-text-opacity));
   }
 
   .md\:dark\:hover\:text-green-400:hover:is(.dark *){
